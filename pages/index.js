@@ -8,8 +8,8 @@ import React from 'react'
 export default function Home() {
 
   return (
-    <div className="text-center lg:px-[10%] xl:px-[16%] bg-[#1e1b01]">
-      <div className= "bg-slate-100 px-24 py-8">
+    <div className="text-center lg:px-[10%] xl:px-[16%] px-0 lg:bg-[#1e1b01] bg-white width-full">
+      <div className= "bg-slate-100 lg:px-24 px-8 py-8 width-full">
 
           <Header />
 
@@ -20,7 +20,6 @@ export default function Home() {
           <Meet />
           <Projects />
           <Meet />
-
       </div>
     </div>
   )

@@ -1,7 +1,11 @@
 const Header = () => {
     return ( 
         <header>
-            <img className="portrait" src="/logo.jpg" alt='portrait photo' />
+            <img 
+                src="/logo.jpg" 
+                alt='portrait photo'
+                className="mb-4 pb-4" 
+            />
         </header>
     );
 }

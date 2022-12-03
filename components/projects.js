@@ -31,15 +31,15 @@ const Projects = () => {
             </motion.div>
 
             <motion.div 
-              variants={fadeIn('left', 'tween', 0.2, 0.5)}
+              variants={fadeIn('right', 'tween', 0.2, 0.5)}
               className="text-[18px] justify-start ml-8 "
             >
               <h3 className="font-bold py-4">Metaversus</h3>
               <ul className="list-disc list-inside">
-              <li>pr3ojecttttttttttttttttttttttttttttt</li>
-              <li>projecttttttttttttttttttttttttttttt</li>
-              <li>projecttttttttttttttttttttttttttttt</li>
-              <li>projecttttttttttttttttttttttttttttt</li>
+                <li>pr3ojecttttttttttttttttttttttttttttt</li>
+                <li>projecttttttttttttttttttttttttttttt</li>
+                <li>projecttttttttttttttttttttttttttttt</li>
+                <li>projecttttttttttttttttttttttttttttt</li>
 
               </ul>
               <div className="flex justify-around mt-8">
@@ -86,7 +86,7 @@ const Projects = () => {
             </motion.div>
 
             <motion.div 
-              variants={fadeIn('left', 'tween', 0.2, 0.5)}
+              variants={fadeIn('right', 'tween', 0.2, 0.5)}
               className="text-[18px] justify-start ml-8 "
             >
               <h3 className="font-bold py-4">Metaversus</h3>
@@ -140,7 +140,7 @@ const Projects = () => {
             </motion.div>
 
             <motion.div 
-              variants={fadeIn('left', 'tween', 0.2, 0.5)}
+              variants={fadeIn('right', 'tween', 0.2, 0.5)}
               className="text-[18px] justify-start ml-8 "
             >
               <h3 className="font-bold py-4">Metaversus</h3>
@@ -194,7 +194,7 @@ const Projects = () => {
             </motion.div>
 
             <motion.div 
-              variants={fadeIn('left', 'tween', 0.2, 0.5)}
+              variants={fadeIn('right', 'tween', 0.2, 0.5)}
               className="text-[18px] justify-start ml-8 "
             >
               <h3 className="font-bold py-4">Metaversus</h3>
