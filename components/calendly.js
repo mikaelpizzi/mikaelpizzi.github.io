@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 const Meet = () => {
     return ( 
-        <div className="calendly" >
+        <section className="calendly" >
           {/* calendly widget load */}
           <Head>
             <link
@@ -41,7 +41,7 @@ const Meet = () => {
               <span className="calendly-text">Click to meet</span>
             </div>
           </motion.button>
-        </div>
+        </section>
     );
 }
  
