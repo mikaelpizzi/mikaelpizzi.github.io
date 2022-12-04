@@ -11,7 +11,7 @@ const Projects = () => {
             initial='hidden'
             whileInView='show'
             viewport={{ once: false, amount: 0.25}}
-            className="flex md:flex-row flex-col my-[120px]"
+            className="flex md:flex-row flex-col mt-[80px] mb-[120px]"
           >
             <motion.div 
               variants={fadeIn('right', 'tween', 0.2, 0.5)}
@@ -171,7 +171,7 @@ const Projects = () => {
             initial='hidden'
             whileInView='show'
             viewport={{ once: false, amount: 0.25}}
-            className="flex md:flex-row flex-col my-[120px]"
+            className="flex md:flex-row flex-col mt-[120px] mb-[55px]"
           >
             <motion.div 
               variants={fadeIn('right', 'tween', 0.2, 0.5)}
