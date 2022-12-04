@@ -26,6 +26,7 @@ const Meet = () => {
               })
             }
             whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
             className="duration-150 block text-base font-bold uppercase mx-auto text-center text-black w-auto"
             type="button"
           >
