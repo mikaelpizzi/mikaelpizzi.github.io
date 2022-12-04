@@ -26,7 +26,7 @@ const Meet = () => {
               })
             }
             whileHover={{ scale: 1.2 }}
-            className="duration-150 block text-base font-bold uppercase mx-auto text-center text-black w-auto w-full"
+            className="duration-150 block text-base font-bold uppercase mx-auto text-center text-black w-auto"
             type="button"
           >
             {/* <img src="/icons/calendar.svg" className="w-8 h-8" alt="mail" /> */}
