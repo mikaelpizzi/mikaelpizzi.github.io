@@ -142,7 +142,7 @@ export const zoomIn = (delay, duration) => ({
 export const footerVariants = {
   hidden: {
     opacity: 0,
-    y: 50,
+    y: 21,
     transition: {
       type: 'spring',
       stiffness: 300,
