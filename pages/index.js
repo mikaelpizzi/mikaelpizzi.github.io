@@ -14,10 +14,34 @@ export default function Home() {
           <Header />
 
           <Text />
-          
-          
-          
-          <Meet />
+
+          <div className="flex items-center justify-around sm:justify-start">
+            <Meet />
+
+            <a href="!#" target="_blank">
+              <img
+                src="/email.png"
+                alt="email"
+                className="w-[40px]"
+              />
+            </a>
+
+            <a href="!#" target="_blank">
+              <img
+                src="/linkedin.png"
+                alt="email"
+                className="w-[40px]"
+              />
+            </a>
+
+            <a href="!#" target="_blank">
+              <img
+                src="/twitter.png"
+                alt="email"
+                className="w-[40px]"
+              />
+            </a>
+          </div>
           <Projects />
           <Meet />
       </div>
