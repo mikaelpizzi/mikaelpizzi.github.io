@@ -31,7 +31,7 @@ const Projects = () => {
             </motion.div>
             <motion.div 
               variants={fadeIn('right', 'tween', 0.2, 0.5)}
-              className="text-[18px] justify-start md:ml-8 "
+              className="text-[18px] justify-start md:ml-8 flex-grow"
             >
               <h3 className="font-bold py-4 min-[832px]:text-[20px] lg:text-[24px]">Metaversus</h3>
               <ul className="md:text-[16px] min-[832px]:text-[18px]">
@@ -85,7 +85,7 @@ const Projects = () => {
             </motion.div>
             <motion.div 
               variants={fadeIn('right', 'tween', 0.2, 0.5)}
-              className="text-[18px] justify-start md:ml-8 "
+              className="text-[18px] justify-start md:ml-8 flex-grow"
             >
               <h3 className="font-bold py-4 min-[832px]:text-[20px] lg:text-[24px]">Metaversus</h3>
               <ul className="md:text-[16px] min-[832px]:text-[18px]">
@@ -138,7 +138,7 @@ const Projects = () => {
             </motion.div>
             <motion.div 
               variants={fadeIn('right', 'tween', 0.2, 0.5)}
-              className="text-[18px] justify-start md:ml-8 "
+              className="text-[18px] justify-start md:ml-8 flex-grow"
             >
               <h3 className="font-bold py-4 min-[832px]:text-[20px] lg:text-[24px]">Metaversus</h3>
               <ul className="md:text-[16px] min-[832px]:text-[18px]">
@@ -191,7 +191,7 @@ const Projects = () => {
             </motion.div>
             <motion.div 
               variants={fadeIn('right', 'tween', 0.2, 0.5)}
-              className="text-[18px] justify-start md:ml-8 "
+              className="text-[18px] justify-start md:ml-8 flex-grow"
             >
               <h3 className="font-bold py-4 min-[832px]:text-[20px] lg:text-[24px]">Metaversus</h3>
               <ul className="md:text-[16px] min-[832px]:text-[18px]">
