@@ -34,13 +34,12 @@ const Projects = () => {
               variants={fadeIn('right', 'tween', 0.2, 0.5)}
               className="text-[18px] justify-start md:ml-8 flex-grow"
             >
-              <h3 className="font-bold py-4 min-[832px]:text-[20px] lg:text-[24px]">Metaversus</h3>
-              <ul className="md:text-[16px] min-[832px]:text-[18px]">
-                <li>&bull; pr3ojecttttttttttttttttttttttttttttt</li>
-                <li>projecttttttttttttttttttttttttttttt</li>
-                <li>projecttttttttttttttttttttttttttttt</li>
-                <li>projecttttttttttttttttttttttttttttt</li>
-
+              <h3 className="font-bold pb-4 min-[832px]:text-[20px] lg:text-[24px]">Metaversus</h3>
+              <ul className="md:text-[16px] min-[832px]:text-[18px] text-center">
+                <li className="font-medium mb-4">Next 13 website with Framer Motion and Tailwind</li>
+                <li>Next 13</li>
+                <li>Tailwind</li>
+                <li>Framer Motion</li>
               </ul>
               <div className="flex md:justify-around justify-evenly mt-8">
                 <motion.a
@@ -91,12 +90,12 @@ const Projects = () => {
               variants={fadeIn('right', 'tween', 0.2, 0.5)}
               className="text-[18px] justify-start md:ml-8 flex-grow"
             >
-              <h3 className="font-bold py-4 min-[832px]:text-[20px] lg:text-[24px]">Metaversus</h3>
-              <ul className="md:text-[16px] min-[832px]:text-[18px]">
-                <li>projecttttttttttttttttttttttttttttt</li>
-                <li>projecttttttttttttttttttttttttttttt</li>
-                <li>projecttttttttttttttttttttttttttttt</li>
-                <li>projecttttttttttttttttttttttttttttt</li>
+              <h3 className="font-bold pb-4 min-[832px]:text-[20px] lg:text-[24px]">Product Hunt</h3>
+              <ul className="md:text-[16px] min-[832px]:text-[18px] text-center">
+                <li className="font-medium mb-4">A Product Hunt clone using NextJS</li>
+                <li>Next</li>
+                <li>Firebase</li>
+                <li>Bootstrap</li>
               </ul>
               <div className="flex md:justify-around justify-evenly mt-8">
                 <motion.a
@@ -147,12 +146,12 @@ const Projects = () => {
               variants={fadeIn('right', 'tween', 0.2, 0.5)}
               className="text-[18px] justify-start md:ml-8 flex-grow"
             >
-              <h3 className="font-bold py-4 min-[832px]:text-[20px] lg:text-[24px]">Metaversus</h3>
+              <h3 className="font-bold pb-4 min-[832px]:text-[20px] lg:text-[24px]">CRUD-Redux</h3>
               <ul className="md:text-[16px] min-[832px]:text-[18px]">
-                <li>projecttttttttttttttttttttttttttttt</li>
-                <li>projecttttttttttttttttttttttttttttt</li>
-                <li>projecttttttttttttttttttttttttttttt</li>
-                <li>projecttttttttttttttttttttttttttttt</li>
+                <li className="font-medium mb-4">A CRUD web application using React, Redux, REST API & Axios</li>
+                <li>Redux</li>
+                <li>Rest API development</li>
+                <li>Bootswatch</li>
               </ul>
               <div className="flex md:justify-around justify-evenly mt-8">
                 <motion.a
@@ -203,12 +202,12 @@ const Projects = () => {
               variants={fadeIn('right', 'tween', 0.2, 0.5)}
               className="text-[18px] justify-start md:ml-8 flex-grow"
             >
-              <h3 className="font-bold py-4 min-[832px]:text-[20px] lg:text-[24px]">Metaversus</h3>
-              <ul className="md:text-[16px] min-[832px]:text-[18px]">
-                <li>projecttttttttttttttttttttttttttttt</li>
-                <li>projecttttttttttttttttttttttttttttt</li>
-                <li>projecttttttttttttttttttttttttttttt</li>
-                <li>projecttttttttttttttttttttttttttttt</li>
+              <h3 className="font-bold pb-4 min-[832px]:text-[20px] lg:text-[24px]">Image search engine</h3>
+              <ul className="md:text-[16px] min-[832px]:text-[18px] text-center">
+                <li className="font-medium mb-4">An image search engine web application using React, Bootswatch and Pixabay API</li>
+                <li>React</li>
+                <li>Fetch</li>
+                <li>Bootswatch</li>
               </ul>
               <div className="flex md:justify-around justify-evenly mt-8">
                 <motion.a
