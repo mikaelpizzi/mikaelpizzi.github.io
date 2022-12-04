@@ -11,7 +11,8 @@ const Projects = () => {
             initial='hidden'
             whileInView='show'
             viewport={{ once: false, amount: 0.25}}
-            className="flex sm:flex-row flex-col my-[120px]">
+            className="flex sm:flex-row flex-col my-[120px]"
+          >
             
             <motion.div 
               variants={fadeIn('right', 'tween', 0.2, 0.5)}
@@ -29,7 +30,6 @@ const Projects = () => {
                   />
               </a>
             </motion.div>
-
             <motion.div 
               variants={fadeIn('right', 'tween', 0.2, 0.5)}
               className="text-[18px] justify-start ml-8 "
@@ -66,8 +66,8 @@ const Projects = () => {
             initial='hidden'
             whileInView='show'
             viewport={{ once: false, amount: 0.25}}
-            className="flex sm:flex-row flex-col my-[120px]">
-            
+            className="flex sm:flex-row flex-col my-[120px]"
+          >
             <motion.div 
               variants={fadeIn('right', 'tween', 0.2, 0.5)}
               className="w-[60%] justify-start"
@@ -84,7 +84,6 @@ const Projects = () => {
                   />
               </a>
             </motion.div>
-
             <motion.div 
               variants={fadeIn('right', 'tween', 0.2, 0.5)}
               className="text-[18px] justify-start ml-8 "
@@ -120,8 +119,8 @@ const Projects = () => {
             initial='hidden'
             whileInView='show'
             viewport={{ once: false, amount: 0.25}}
-            className="flex sm:flex-row flex-col my-[120px]">
-            
+            className="flex sm:flex-row flex-col my-[120px]"
+          >
             <motion.div 
               variants={fadeIn('right', 'tween', 0.2, 0.5)}
               className="w-[60%] justify-start"
@@ -138,7 +137,6 @@ const Projects = () => {
                   />
               </a>
             </motion.div>
-
             <motion.div 
               variants={fadeIn('right', 'tween', 0.2, 0.5)}
               className="text-[18px] justify-start ml-8 "
@@ -174,8 +172,8 @@ const Projects = () => {
             initial='hidden'
             whileInView='show'
             viewport={{ once: false, amount: 0.25}}
-            className="flex sm:flex-row flex-col my-[120px]">
-            
+            className="flex sm:flex-row flex-col my-[120px]"
+          >
             <motion.div 
               variants={fadeIn('right', 'tween', 0.2, 0.5)}
               className="w-[60%] justify-start"
@@ -192,7 +190,6 @@ const Projects = () => {
                   />
               </a>
             </motion.div>
-
             <motion.div 
               variants={fadeIn('right', 'tween', 0.2, 0.5)}
               className="text-[18px] justify-start ml-8 "
@@ -221,7 +218,6 @@ const Projects = () => {
               </div>
             </motion.div>
           </motion.div>
-        
         </section>
     );
 }
