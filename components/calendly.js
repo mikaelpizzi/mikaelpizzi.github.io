@@ -41,17 +41,6 @@ const Meet = () => {
             </div>
           </motion.button>
         </div>
-        // button {
-        //   display: block;
-        //   font-weight: 700;
-        //   text-transform: uppercase;
-        //   border: 4px solid #fee600;
-        //   padding: .8rem 2rem;
-        //   margin: 2rem auto;
-        //   text-align: center;
-        //   background-color: white;
-        //   color: black;
-        // }
     );
 }
  
