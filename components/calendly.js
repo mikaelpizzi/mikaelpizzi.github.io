@@ -26,12 +26,19 @@ const Meet = () => {
               })
             }
             whileHover={{ scale: 1.2 }}
-            className="duration-150 block font-bold uppercase py-[0.8rem] px-[2rem] my-8 mx-auto text-center bg-black text-white sm:w-auto w-full"
+            className="duration-150 block text-base font-bold uppercase mx-auto text-center text-black w-auto w-full"
             type="button"
           >
             {/* <img src="/icons/calendar.svg" className="w-8 h-8" alt="mail" /> */}
             &nbsp;
-            <span className="calendly-text">Click to meet</span>
+            <div className='flex items-center'>
+              <img
+                src='/calendar.png'
+                alt='calendar'
+                className='w-[50px] p-2'
+              />
+              <span className="calendly-text">Click to meet</span>
+            </div>
           </motion.button>
         </div>
         // button {
