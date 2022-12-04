@@ -16,20 +16,20 @@ const Header = () => {
                 <a href="mailto:mikaelangelopizzi@gmail.com" target="_blank">
                     <motion.img
                         whileHover={{ scale: 1.15 }}
-                    whileTap={{ scale: 0.8 }}
+                        whileTap={{ scale: 0.8 }}
                         src="/email.png"
                         alt="email"
-                        className="sm:w-[40px] w-[25px] sm:mr-16 mr-4 ml-4"
+                        className="sm:w-[40px] w-[25px] sm:mr-16 min-[480px]:mr-8 mr-4 ml-4"
                     />
                 </a>
 
                 <a href="https://www.linkedin.com/in/mikaelpizzi/" target="_blank">
                     <motion.img
                         whileHover={{ scale: 1.15 }}
-                    whileTap={{ scale: 0.8 }}
+                        whileTap={{ scale: 0.8 }}
                         src="/linkedin.png"
                         alt="email"
-                        className="sm:w-[40px] w-[25px] sm:mr-16 mr-4"
+                        className="sm:w-[40px] w-[25px] sm:mr-16 min-[480px]:mr-8 mr-4"
                     />
                 </a>
 
