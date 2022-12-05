@@ -5,7 +5,7 @@ export default function Document() {
     <Html>
         <Head>
             <html lang='en' />
-
+            <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
             <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet" />
