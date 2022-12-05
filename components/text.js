@@ -7,7 +7,9 @@ const Text = () => {
 
             <div className="text-left py-8 sm:text-lg text-[1.05rem]">
                 { mainText.map((text, index) => (
-                    <div>
+                    <div
+                        key={`line-${index+1}`}    
+                    >
                         { index === 0 ? (
                             <p className="mb-5">{text}</p>
                         ) : (
