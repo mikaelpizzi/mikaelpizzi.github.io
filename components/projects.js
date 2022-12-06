@@ -26,7 +26,7 @@ const Projects = () => {
                   whileTap={{ scale: 0.8 }}
                   src='/metaversus.jpg'
                   alt='Metaversus project image'
-                  className="w-full rounded-lg shadow-[0_0px_30px_5px_#000] hover:shadow-none hover:border-[1px] border-black md:mb-0 mb-6"
+                  className="w-full rounded-lg shadow-[0_0px_20px_2px_#000] hover:shadow-none hover:border-[1px] border-black md:mb-0 mb-6"
                   />
               </a>
             </motion.div>
@@ -82,7 +82,7 @@ const Projects = () => {
                   whileTap={{ scale: 0.8 }}
                   src='/product-hunt.jpg'
                   alt='product hunt clone project image'
-                  className="width-full rounded-lg shadow-[0_0px_30px_5px_#000] hover:shadow-none hover:border-[1px] border-black md:mb-0 mb-6"
+                  className="width-full rounded-lg shadow-[0_0px_20px_2px_#000] hover:shadow-none hover:border-[1px] border-black md:mb-0 mb-6"
                   />
               </a>
             </motion.div>
@@ -138,7 +138,7 @@ const Projects = () => {
                   whileTap={{ scale: 0.8 }}
                   src='/crud-redux.jpg'
                   alt='CRUD Redux project image'
-                  className="width-full rounded-lg shadow-[0_0px_30px_5px_#000] hover:shadow-none hover:border-[1px] border-black md:mb-0 mb-6"
+                  className="width-full rounded-lg shadow-[0_0px_20px_2px_#000] hover:shadow-none hover:border-[1px] border-black md:mb-0 mb-6"
                   />
               </a>
             </motion.div>
@@ -194,7 +194,7 @@ const Projects = () => {
                   whileTap={{ scale: 0.8 }}
                   src='/image-search.jpg'
                   alt='Image search engine project image'
-                  className="width-full rounded-lg shadow-[0_0px_30px_5px_#000] hover:shadow-none hover:border-[1px] border-black md:mb-0 mb-6"
+                  className="width-full rounded-lg shadow-[0_0px_20px_2px_#000] hover:shadow-none hover:border-[1px] border-black md:mb-0 mb-6"
                   />
               </a>
             </motion.div>
