@@ -24,16 +24,6 @@ const Footer = () => {
                     whileTap={{ scale: 0.8 }}
                     src="/linkedin.png"
                     alt="email"
-                    className="sm:w-[40px] w-[25px] mx-6"
-                />
-            </a>
-
-            <a href="https://twitter.com/mikaelpizzi/" target="_blank">
-                <motion.img
-                    whileHover={{ scale: 1.15 }}
-                    whileTap={{ scale: 0.8 }}
-                    src="/twitter.png"
-                    alt="email"
                     className="sm:w-[40px] w-[25px] ml-4"
                 />
             </a>
