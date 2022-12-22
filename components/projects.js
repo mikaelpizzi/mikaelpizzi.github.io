@@ -61,6 +61,61 @@ const Projects = () => {
             </motion.div>
           </motion.div>
 
+          <motion.div 
+            variants={staggerContainer}
+            initial='hidden'
+            whileInView='show'
+            viewport={{ once: false, amount: 0.25}}
+            className="flex md:flex-row flex-col mt-[80px] mb-[120px]"
+          >
+            <motion.div 
+              variants={fadeIn('right', 'tween', 0.2, 0.5)}
+              className="md:w-[60%] w-auto"
+            >
+              <a
+                href='https://therealnews-mikaelpizzi.vercel.app/'
+                target='_blank'
+              >
+                <motion.img
+                  whileHover={{ scale: 1.075 }}
+                  whileTap={{ scale: 0.8 }}
+                  src='/news.jpg'
+                  alt='The Real News project image'
+                  className="w-full rounded-lg shadow-[0_0px_20px_2px_#000] hover:shadow-none hover:border-[1px] border-black md:mb-0 mb-6"
+                  />
+              </a>
+            </motion.div>
+            <motion.div 
+              variants={fadeIn('right', 'tween', 0.2, 0.5)}
+              className="text-[18px] justify-start md:ml-8 flex-grow"
+            >
+              <h3 className="font-bold pb-4 min-[832px]:text-[20px] lg:text-[24px]">The Real News</h3>
+              <ul className="md:text-[16px] min-[832px]:text-[18px] text-center">
+                <li className="font-medium mb-4">Next 13 news app with Typescript, Stepzen, GraphQL and Tailwind</li>
+                <li>Dynamic and static data</li>
+                <li>Typescript</li>
+                <li>GraphQL</li>
+              </ul>
+              <div className="flex md:justify-around justify-evenly mt-8">
+                <motion.a
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.8 }}
+                  href='https://therealnews-mikaelpizzi.vercel.app/'
+                  target='_blank'
+                  className='bg-black text-white font-bold py-2 px-4 rounded'
+                >LIVE</motion.a>
+
+                <motion.a
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.8 }}
+                  href='https://github.com/mikaelpizzi/news-app'
+                  target='_blank'
+                  className='bg-black text-white font-bold py-2 px-4 rounded'
+                >CODE</motion.a>
+              </div>
+            </motion.div>
+          </motion.div>
+
 
           <motion.div 
             variants={staggerContainer}
@@ -123,7 +178,7 @@ const Projects = () => {
             initial='hidden'
             whileInView='show'
             viewport={{ once: false, amount: 0.25}}
-            className="flex md:flex-row flex-col my-[120px]"
+            className="flex md:flex-row flex-col mt-[120px] mb-[60px]"
           >
             <motion.div 
               variants={fadeIn('right', 'tween', 0.2, 0.5)}
@@ -173,61 +228,6 @@ const Projects = () => {
             </motion.div>
           </motion.div>
 
-
-          <motion.div 
-            variants={staggerContainer}
-            initial='hidden'
-            whileInView='show'
-            viewport={{ once: false, amount: 0.25}}
-            className="flex md:flex-row flex-col mt-[120px] mb-[55px]"
-          >
-            <motion.div 
-              variants={fadeIn('right', 'tween', 0.2, 0.5)}
-              className="md:w-[60%] w-auto"
-            >
-              <a
-                href='https://mp-img-searcher.netlify.app/'
-                target='_blank'
-              >
-                <motion.img
-                  whileHover={{ scale: 1.075 }}
-                  whileTap={{ scale: 0.8 }}
-                  src='/image-search.jpg'
-                  alt='Image search engine project image'
-                  className="width-full rounded-lg shadow-[0_0px_20px_2px_#000] hover:shadow-none hover:border-[1px] border-black md:mb-0 mb-6"
-                  />
-              </a>
-            </motion.div>
-            <motion.div 
-              variants={fadeIn('right', 'tween', 0.2, 0.5)}
-              className="text-[18px] justify-start md:ml-8 flex-grow"
-            >
-              <h3 className="font-bold pb-4 min-[832px]:text-[20px] lg:text-[24px]">Image search engine</h3>
-              <ul className="md:text-[16px] min-[832px]:text-[18px] text-center">
-                <li className="font-medium mb-4">An image search engine web application using React, Bootswatch and Pixabay API</li>
-                <li>React</li>
-                <li>Fetch</li>
-                <li>Bootswatch</li>
-              </ul>
-              <div className="flex md:justify-around justify-evenly mt-8">
-                <motion.a
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.8 }}
-                  href='https://mp-img-searcher.netlify.app/'
-                  target='_blank'
-                  className='bg-black text-white font-bold py-2 px-4 rounded'
-                >LIVE</motion.a>
-
-                <motion.a
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.8 }}
-                  href='https://github.com/mikaelpizzi/image-search-engine'
-                  target='_blank'
-                  className='bg-black text-white font-bold py-2 px-4 rounded'
-                >CODE</motion.a>
-              </div>
-            </motion.div>
-          </motion.div>
         </section>
     );
 }
