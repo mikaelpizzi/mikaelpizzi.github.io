@@ -3,6 +3,7 @@ import Meet from "../components/calendly";
 import Text from "../components/text";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import Subtitle from "../components/subtitle";
 import React from 'react'
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
           <Header />
           <Text />
           <Meet />
+          <Subtitle />
           <Projects />
           <Meet />
           <Footer />
