@@ -9,7 +9,7 @@ export default function Document() {
             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
             <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet" />
             <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,400;1,700&display=swap" rel="stylesheet" />
-      </Head>
+        </Head>
       <body>
         <Main />
         <NextScript />
