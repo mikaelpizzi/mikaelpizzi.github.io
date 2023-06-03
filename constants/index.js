@@ -1,12 +1,11 @@
-export const title = "Surely you have felt like this more than once";
+export const title = "Yes";
 
 export const mainText = [
-    "Yes...",
-    "That feeling,",
-    "I'm stupid?",
-    "I've realized that yes.",
-    "Yes, I'm stupid,",
-    "And I'm happy about it.",
-    "If I was stupid a week ago, imagine how stupid I was when I thought HTML was a programming language.",
-    "I'm sure I'm stupid today, but tomorrow I'll be less so.",
+  "I struggle a lot 😓",
+  "But if it didn’t cost me I wouldn’t be learning so much 📚",
+  "I absolutely loathed ORMs, now I adore them with all my heart 💖",
+  "I didn’t knew what I was doing in a useEffect, so I did thousand of them 🤯",
+  "Backend development used to terrify me, now it inspires me to create amazing things 🚀",
+  "I hid when there was a meeting, now I love to express myself and lead the way 🗣️",
+  "I’m ready to integrate in (almost) any team 👥, and waiting for the right call 📞, maybe it’s yours 😉",
 ];
