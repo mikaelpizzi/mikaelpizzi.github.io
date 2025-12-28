@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, ExternalLink, Code2, WifiOff, Database, Radio, Server, Truck, CreditCard, GitBranch, Cloud } from 'lucide-react';
+import { Github, Linkedin, Mail, ExternalLink, Code2, WifiOff, Database, Radio, Server, Truck, CreditCard, GitBranch, Cloud, FileText } from 'lucide-react';
 
 function App() {
   return (
@@ -15,6 +15,16 @@ function App() {
           <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
             <span className="text-lg font-semibold">Mikael Pizzi</span>
             <div className="flex items-center gap-2">
+              <a 
+                href="/Mikael_Pizzi_Full_Stack_Engineer_Resume.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="flex items-center gap-1.5 px-3 py-2 rounded-lg hover:bg-white/5 transition-colors text-slate-400 hover:text-slate-200 text-sm font-medium"
+              >
+                <FileText className="w-4 h-4" />
+                <span className="hidden sm:inline">Resume</span>
+              </a>
+              <div className="w-px h-5 bg-white/10 mx-1" />
               <a href="https://linkedin.com/in/mikaelpizzi" target="_blank" rel="noopener noreferrer" className="p-2.5 rounded-lg hover:bg-white/5 transition-colors">
                 <Linkedin className="w-5 h-5 text-slate-400" />
               </a>
