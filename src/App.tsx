@@ -1,7 +1,15 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, ExternalLink, Code2, WifiOff, Database, Radio, Server, Truck, CreditCard, GitBranch, Cloud, FileText } from 'lucide-react';
 
 function App() {
+  const [emailCopied, setEmailCopied] = useState(false);
+  
+  const handleEmailClick = () => {
+    navigator.clipboard.writeText('mikaelangelopizzi@gmail.com');
+    setEmailCopied(true);
+    setTimeout(() => setEmailCopied(false), 2000);
+  };
   return (
     <div className="min-h-screen bg-slate-950 text-slate-50 relative">
       {/* Background Effects */}
@@ -31,8 +39,17 @@ function App() {
               <a href="https://github.com/mikaelpizzi" target="_blank" rel="noopener noreferrer" className="p-2.5 rounded-lg hover:bg-white/5 transition-colors">
                 <Github className="w-5 h-5 text-slate-400" />
               </a>
-              <a href="mailto:mikaelangelopizzi@gmail.com" className="p-2.5 rounded-lg hover:bg-white/5 transition-colors">
+              <a 
+                href="mailto:mikaelangelopizzi@gmail.com" 
+                onClick={handleEmailClick}
+                className="p-2.5 rounded-lg hover:bg-white/5 transition-colors relative"
+              >
                 <Mail className="w-5 h-5 text-slate-400" />
+                {emailCopied && (
+                  <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 px-2 py-1 bg-emerald-500 text-white text-xs rounded whitespace-nowrap">
+                    Copied!
+                  </span>
+                )}
               </a>
             </div>
           </div>
