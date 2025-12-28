@@ -110,9 +110,8 @@ function App() {
               {/* The Problem Statement */}
               <div className="max-w-4xl mx-auto text-center mb-24">
                 <p className="text-lg md:text-xl text-slate-400 leading-relaxed">
-                  A distributed logistics and fintech solution connecting <span className="text-slate-200">Sellers</span>, <span className="text-slate-200">Buyers</span>, and <span className="text-slate-200">Couriers</span> in 
-                  Latin America's informal economy—where internet is unreliable, 
-                  trust is earned through transparency, and every millisecond of downtime costs money.
+                  A production-grade ecosystem connecting <span className="text-slate-200">Sellers</span>, <span className="text-slate-200">Buyers</span>, and <span className="text-slate-200">Couriers</span> across 
+                  LatAm. Built to handle real-world constraints like intermittent connectivity and complex logistics without missing a beat.
                 </p>
               </div>
 
