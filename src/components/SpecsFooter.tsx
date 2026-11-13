@@ -67,3 +67,4 @@ export function SpecsFooter({ skills, education, name }: SpecsFooterProps) {
     </footer>
   );
 }
+

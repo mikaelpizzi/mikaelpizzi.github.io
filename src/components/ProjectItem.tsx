@@ -182,3 +182,4 @@ export function ProjectItem({ project, isFirst = false }: ProjectItemProps) {
     </article>
   );
 }
+
