@@ -54,13 +54,8 @@ export function SpecsFooter({ skills, education, name }: SpecsFooterProps) {
       </div>
 
       {/* Minimalist Footer */}
-      <div className="border-t border-[#222222] pt-6 mt-16 flex flex-col sm:flex-row items-baseline justify-between gap-2 font-mono text-xs text-[#71717A]">
-        <div>
-          <span>© {currentYear} {name}</span>
-        </div>
-        <div>
-          Mérida, Venezuela · GMT-4
-        </div>
+      <div className="border-t border-[#222222] pt-6 mt-16 font-mono text-xs text-[#71717A]">
+        <span>© {currentYear} {name}</span>
       </div>
     </footer>
   );
