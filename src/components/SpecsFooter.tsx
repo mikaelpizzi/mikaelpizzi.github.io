@@ -57,11 +57,9 @@ export function SpecsFooter({ skills, education, name }: SpecsFooterProps) {
       <div className="border-t border-[#222222] pt-6 mt-16 flex flex-col sm:flex-row items-baseline justify-between gap-2 font-mono text-xs text-[#71717A]">
         <div>
           <span>© {currentYear} {name}</span>
-          <span className="mx-2">·</span>
-          <span>Editorial static layout</span>
         </div>
-        <div className="text-[#52525B]">
-          Zero heavy dependencies · Strict typography
+        <div>
+          Mérida, Venezuela · GMT-4
         </div>
       </div>
     </footer>
