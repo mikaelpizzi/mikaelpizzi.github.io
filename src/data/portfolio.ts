@@ -68,7 +68,7 @@ export const portfolioData: PortfolioData = {
     github: 'https://github.com/mikaelpizzi',
     linkedin: 'https://linkedin.com/in/mikaelpizzi',
     resumeUrl: '/resume.pdf',
-    bio: "Code is easy. System reliability is hard. I don't just build features; I engineer stability. My work focuses on polyglot persistence, defensive programming, and cutting through complexity to deliver value where it matters most.",
+    bio: 'Software Engineer with 5+ years of remote experience designing and maintaining distributed backends, microservices, and web applications. Focused on TypeScript, NestJS, React, and PostgreSQL query optimization for high-traffic production environments.',
   },
   projects: [
     {
