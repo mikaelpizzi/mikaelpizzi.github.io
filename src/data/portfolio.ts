@@ -1,9 +1,6 @@
-export interface ProjectChallenge {
+export interface ArchitecturalDecision {
   title: string;
-  problem: string;
-  solutionTitle: string;
-  solution: string;
-  metric: string;
+  description: string;
 }
 
 export interface Project {
@@ -12,13 +9,12 @@ export interface Project {
   subtitle: string;
   stack: string[];
   description: string;
-  note?: string;
-  infraNote?: string;
   githubUrl?: string;
   liveUrl?: string;
   diagramSvg?: string;
   videoUrl?: string;
-  challenges?: ProjectChallenge[];
+  decisions?: ArchitecturalDecision[];
+  scalingBoundary?: string;
 }
 
 export interface Experience {
@@ -72,99 +68,39 @@ export const portfolioData: PortfolioData = {
   },
   projects: [
     {
-      id: 'puente-platform',
-      title: 'Puente Platform',
-      subtitle: 'A Production-Grade Microservices Ecosystem',
+      id: 'sicm',
+      title: 'Integrated Medication Control System (SICM)',
+      subtitle: 'Zero-ORM Relational Architecture & Municipal Inventory Engine',
       stack: [
-        'TypeScript',
-        'NestJS',
-        'Docker',
-        'React',
-        'OpenTelemetry',
-        'Redis',
-        'PostgreSQL',
-        'MongoDB',
+        'SQL (MariaDB)',
+        'PHP 8 (PDO)',
+        'Vanilla JavaScript',
+        'Docker Compose',
+        'Bootstrap',
       ],
       description:
-        'A production-grade ecosystem connecting Sellers, Buyers, and Couriers across LatAm. Built to handle real-world constraints like intermittent connectivity and complex logistics without missing a beat.',
-      note: 'Built with NestJS for modular backend architecture, Docker for container orchestration, React as an offline-first PWA, and OpenTelemetry for end-to-end observability.',
-      infraNote:
-        'Fully containerized architecture. Showcased in a local Docker environment to demonstrate zero-dependency orchestration.',
-      githubUrl: 'https://github.com/mikaelpizzi/puente-platform',
-      liveUrl: 'https://puente-architecture.vercel.app',
-      diagramSvg: '/system-overview-dark.svg',
-      // videoUrl: undefined, // omitted to avoid broken players as per specs
-      challenges: [
+        'Municipal chronic-medication distribution system engineered to enforce strict inventory traceability, patient allocation rules, and auditability directly inside the database engine. Deliberately built without ORMs or external runtime extensions to eliminate abstraction overhead, prevent N+1 query patterns, and maintain deterministic control over SQL execution plans and ACID transaction boundaries.',
+      githubUrl: 'https://github.com/mikaelpizzi/sistema-distribucion',
+      diagramSvg: '/DB_proyecto.svg',
+      decisions: [
         {
-          title: 'Unreliable Networks',
-          problem:
-            "LatAm couriers work in zones with spotty connectivity. Route calculations can't depend on external APIs.",
-          solutionTitle: 'Self-Hosted OSRM + Haversine Fallback',
-          solution:
-            'Venezuela OSM data running locally. Automatic fallback to Haversine formula.',
-          metric: '100% routing uptime.',
+          title: 'Database-Level Invariant Enforcement (23 Normalized Tables)',
+          description:
+            'Enforced domain integrity via strict foreign-key cascades, CHECK constraints, and automated BEFORE/AFTER SQL triggers rather than relying solely on application-layer validation. Guarantees zero negative stock states and immutable audit/system notification logs even under direct SQL batch operations.',
         },
         {
-          title: 'Real-time at Scale',
-          problem:
-            'Buyers need live courier positions. Sellers need instant order updates. Thousands of concurrent connections.',
-          solutionTitle: 'WebSockets + Redis Pub/Sub',
-          solution:
-            'Redis GEO commands for geo-spatial queries. Event-driven architecture.',
-          metric: 'Sub-second updates.',
+          title: 'Explicit ACID Transactions & Concurrency Control',
+          description:
+            'Replaced heavy Active Record/ORM abstractions with raw parameterized PDO prepared statements and explicit BEGIN / COMMIT / ROLLBACK blocks. Prevented race conditions during concurrent medication dispatches while keeping memory footprint minimal.',
         },
         {
-          title: 'Data Diversity',
-          problem:
-            'Financial data needs ACID. Product catalogs need flexibility. Sessions need speed.',
-          solutionTitle: 'Polyglot Persistence',
-          solution:
-            'PostgreSQL for finance, MongoDB for products, Redis for sessions.',
-          metric: 'Right tool for each job.',
-        },
-        {
-          title: 'Monolith Hell',
-          problem:
-            "Single codebase becomes unmaintainable. Teams can't deploy independently. One bug brings everything down.",
-          solutionTitle: '6 Independent Microservices',
-          solution: 'NestJS with strict DI and clean architecture.',
-          metric: 'Deploy any service without touching others.',
-        },
-        {
-          title: 'Delivery Disputes',
-          problem:
-            '"I never received it" claims destroy trust. No paper trail in informal commerce.',
-          solutionTitle: 'Digital Proof of Delivery',
-          solution: 'Signature capture + photo upload to Cloudinary.',
-          metric: 'Every delivery is verifiable.',
-        },
-        {
-          title: 'Volatile Currency',
-          problem:
-            'Venezuelan prices change hourly. Users need real USD/crypto equivalents always.',
-          solutionTitle: 'Real-time Crypto Rates',
-          solution: 'Binance P2P + CoinGecko APIs with smart caching.',
-          metric: 'Always accurate, never stale.',
-        },
-        {
-          title: 'Manual Deployments',
-          problem:
-            'Pushing code manually means human error, inconsistent builds, and no audit trail.',
-          solutionTitle: 'GitHub Actions CI/CD',
-          solution:
-            'Automated lint, test, Docker build → GHCR → Render/Fly.io.',
-          metric: 'Branch protection enforces green CI.',
-        },
-        {
-          title: 'Startup Budget Reality',
-          problem:
-            'Free tiers expire, sleep policies kill demos, and costs explode at scale.',
-          solutionTitle: 'Multi-Cloud Franken-Stack',
-          solution:
-            'Aiven (Postgres/Redis) + MongoDB Atlas + Render.',
-          metric: 'Permanent free tiers, zero monthly cost.',
+          title: 'Zero-Bloat Security, Reporting & Containerization',
+          description:
+            'Implemented stateful token security (tokens_seguridad) with strict expiration/revocation rules, streaming CSV reporting for administrative audits without memory spikes, and a single-command reproducible runtime via lightweight Docker Compose orchestration.',
         },
       ],
+      scalingBoundary:
+        'Designed for deterministic single-node relational throughput at municipal scale; horizontal read-scaling beyond ~10k concurrent dispatches/min would introduce read-replicas and partition historical audit tables by quarter.',
     },
   ],
   experience: [
@@ -175,7 +111,7 @@ export const portfolioData: PortfolioData = {
       period: '2021 — 2026',
       highlights: [
         'Developed and maintained microservices using Node.js and NestJS within a Dockerized environment, contributing to a 40% reduction in new feature implementation time.',
-        'Co-engineered the migration of legacy data to a distributed architecture (PostgreSQL and MongoDB), improving complex query speeds by 25%.',
+        'Co-engineered the zero-downtime migration of legacy data into a split persistence model—isolating ACID transactional records in PostgreSQL while offloading flexible catalog schemas to MongoDB—cutting complex query latency by 25%.',
         'Designed and integrated RESTful endpoints with an API Gateway to centralize authentication and logging across services.',
         'Refactored React UI components and implemented Redux Toolkit for state management, resolving over 50 reported bugs and improving code readability.',
         'Designed and delivered multiple end-to-end features such as the "User Profile" module, handling both the API logic and frontend integration ahead of schedule.',
@@ -188,7 +124,7 @@ export const portfolioData: PortfolioData = {
       period: '2020 — Present',
       highlights: [
         'Architected and deployed custom e-commerce solutions, leading the end-to-end development of interactive UIs with React/TypeScript and secure payment infrastructures using Node.js, Express, AWS, and Stripe.',
-        'Optimized a high-traffic application by restructuring PostgreSQL queries and implementing a Redis caching strategy, achieving a 40% reduction in main page load times.',
+        'Diagnosed execution-plan bottlenecks on a high-traffic platform, restructuring unindexed PostgreSQL joins and introducing a targeted Redis cache-aside layer with strict TTL invalidation to reduce main page load times by 40%.',
       ],
     },
   ],
@@ -208,11 +144,11 @@ export const portfolioData: PortfolioData = {
     },
     {
       category: 'Frontend',
-      skills: 'React, Next.js, Redux Toolkit, Tailwind CSS, SASS/CSS3, HTML5, CSS3',
+      skills: 'React, Next.js, Redux Toolkit, Tailwind CSS, SASS/SCSS, HTML5',
     },
     {
       category: 'Databases',
-      skills: 'PostgreSQL, MongoDB, Redis, MySQL',
+      skills: 'PostgreSQL, MongoDB, Redis, MySQL, MariaDB',
     },
     {
       category: 'Cloud & DevOps',
@@ -220,4 +156,3 @@ export const portfolioData: PortfolioData = {
     },
   ],
 };
-

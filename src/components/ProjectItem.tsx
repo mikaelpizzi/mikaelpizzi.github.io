@@ -135,48 +135,28 @@ export function ProjectItem({ project, isFirst = false }: ProjectItemProps) {
         </div>
       )}
 
-      {/* Architecture & Engineering Challenges / Solutions */}
-      {project.challenges && project.challenges.length > 0 && (
-        <div className="space-y-4 pt-2">
+      {/* Architectural Decisions & Engineering Trade-offs */}
+      {project.decisions && project.decisions.length > 0 && (
+        <div className="space-y-3 pt-2">
           <h4 className="font-mono text-xs uppercase tracking-wider text-[#71717A]">
-            Engineering Challenges &amp; System Solutions
+            Architectural Decisions &amp; Engineering Trade-offs
           </h4>
-          <ul className="space-y-4">
-            {project.challenges.map((c) => (
-              <li
-                key={c.title}
-                className="text-[14px] leading-relaxed text-[#A1A1AA] border-l border-[#222222] pl-4 space-y-1"
-              >
-                <div>
-                  <span className="text-[#EDEDED] font-medium">{c.title}:</span>{' '}
-                  <span>{c.problem}</span>
-                </div>
-                <div>
-                  <span className="font-mono text-xs text-[#71717A]">
-                    ↳ Solution ({c.solutionTitle}):
-                  </span>{' '}
-                  <span>{c.solution}</span>{' '}
-                  <span className="font-mono text-xs text-[#EDEDED]">
-                    [{c.metric}]
-                  </span>
-                </div>
+          <ul className="list-disc pl-4 space-y-2.5 text-[14px] leading-relaxed text-[#A1A1AA]">
+            {project.decisions.map((d) => (
+              <li key={d.title}>
+                <span className="text-[#EDEDED] font-medium">{d.title}:</span>{' '}
+                <span>{d.description}</span>
               </li>
             ))}
           </ul>
         </div>
       )}
 
-      {/* Contextual Stack Note */}
-      {project.note && (
-        <p className="text-[14px] text-[#71717A] leading-relaxed pt-1">
-          {project.note}
-        </p>
-      )}
-
-      {/* Infrastructure Note */}
-      {project.infraNote && (
-        <p className="font-mono text-xs text-[#71717A] border-t border-[#1C1C1C] pt-3">
-          Note: {project.infraNote}
+      {/* Scope & Scaling Boundary */}
+      {project.scalingBoundary && (
+        <p className="text-[13px] text-[#A1A1AA] leading-relaxed border-t border-[#1C1C1C] pt-3">
+          <span className="text-[#EDEDED] font-medium">Scope &amp; Scaling Boundary:</span>{' '}
+          {project.scalingBoundary}
         </p>
       )}
     </article>
