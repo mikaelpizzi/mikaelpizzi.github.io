@@ -108,7 +108,7 @@ export const portfolioData: PortfolioData = {
       role: 'Software Engineer',
       company: 'Mercader (Chile-based Startup)',
       location: 'Remote',
-      period: '2021 — 2026',
+      period: '2021 – 2026',
       highlights: [
         'Developed and maintained microservices using Node.js and NestJS within a Dockerized environment, contributing to a 40% reduction in new feature implementation time.',
         'Co-engineered the zero-downtime migration of legacy data into a split persistence model, isolating ACID transactional records in PostgreSQL while offloading flexible catalog schemas to MongoDB, cutting complex query latency by 25%.',
@@ -121,7 +121,7 @@ export const portfolioData: PortfolioData = {
       role: 'Independent Developer & Consultant',
       company: 'Freelance',
       location: 'Remote',
-      period: '2020 — Present',
+      period: '2020 – Present',
       highlights: [
         'Architected and deployed custom e-commerce solutions, leading the end-to-end development of interactive UIs with React/TypeScript and secure payment infrastructures using Node.js, Express, AWS, and Stripe.',
         'Diagnosed execution-plan bottlenecks on a high-traffic platform, restructuring unindexed PostgreSQL joins and introducing a targeted Redis cache-aside layer with strict TTL invalidation to reduce main page load times by 40%.',

@@ -42,7 +42,7 @@ export function SpecsFooter({ skills, education, name }: SpecsFooterProps) {
         <div className="text-sm">
           <p className="text-[#EDEDED]">
             {education.degree}{' '}
-            <span className="text-[#71717A]">—</span>{' '}
+            <span className="text-[#71717A]">·</span>{' '}
             <span className="text-[#A1A1AA]">{education.institution}</span>
           </p>
           {education.details && (

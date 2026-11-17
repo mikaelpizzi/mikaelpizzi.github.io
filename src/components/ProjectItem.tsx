@@ -100,7 +100,7 @@ export function ProjectItem({ project, isFirst = false }: ProjectItemProps) {
           >
             <div className="flex items-center justify-between border-b border-[#222222] pb-3 mb-4 font-mono text-xs">
               <span className="text-[#A1A1AA]">
-                {project.title} — System Architecture
+                {project.title} · System Architecture
               </span>
               <button
                 type="button"
@@ -141,7 +141,7 @@ export function ProjectItem({ project, isFirst = false }: ProjectItemProps) {
           <h4 className="font-mono text-xs uppercase tracking-wider text-[#71717A]">
             Architectural Decisions &amp; Engineering Trade-offs
           </h4>
-          <ul className="list-disc pl-4 space-y-2.5 text-[14px] leading-relaxed text-[#A1A1AA]">
+          <ul className="list-disc pl-4 space-y-2.5 marker:text-[#71717A] text-[14px] leading-relaxed text-[#A1A1AA]">
             {project.decisions.map((d) => (
               <li key={d.title}>
                 <span className="text-[#EDEDED] font-medium">{d.title}:</span>{' '}

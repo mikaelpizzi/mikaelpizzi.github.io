@@ -51,11 +51,11 @@ export function ExperienceList({ items }: ExperienceListProps) {
                 <p className="text-sm text-[#71717A]">{item.company}</p>
               </div>
 
-              <ul className="space-y-2 list-none">
+              <ul className="list-disc pl-4 space-y-2 marker:text-[#71717A]">
                 {item.highlights.map((bullet, bIdx) => (
                   <li
                     key={bIdx}
-                    className="text-[14px] leading-relaxed text-[#A1A1AA] relative pl-4 before:content-['—'] before:absolute before:left-0 before:text-[#52525B]"
+                    className="text-[14px] leading-relaxed text-[#A1A1AA]"
                   >
                     {formatHighlightText(bullet)}
                   </li>
