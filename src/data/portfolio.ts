@@ -111,7 +111,7 @@ export const portfolioData: PortfolioData = {
       period: '2021 — 2026',
       highlights: [
         'Developed and maintained microservices using Node.js and NestJS within a Dockerized environment, contributing to a 40% reduction in new feature implementation time.',
-        'Co-engineered the zero-downtime migration of legacy data into a split persistence model—isolating ACID transactional records in PostgreSQL while offloading flexible catalog schemas to MongoDB—cutting complex query latency by 25%.',
+        'Co-engineered the zero-downtime migration of legacy data into a split persistence model, isolating ACID transactional records in PostgreSQL while offloading flexible catalog schemas to MongoDB, cutting complex query latency by 25%.',
         'Designed and integrated RESTful endpoints with an API Gateway to centralize authentication and logging across services.',
         'Refactored React UI components and implemented Redux Toolkit for state management, resolving over 50 reported bugs and improving code readability.',
         'Designed and delivered multiple end-to-end features such as the "User Profile" module, handling both the API logic and frontend integration ahead of schedule.',
