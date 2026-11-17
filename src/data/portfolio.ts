@@ -115,6 +115,9 @@ export const portfolioData: PortfolioData = {
         'Designed and integrated RESTful endpoints with an API Gateway to centralize authentication and logging across services.',
         'Refactored React UI components and implemented Redux Toolkit for state management, resolving over 50 reported bugs and improving code readability.',
         'Designed and delivered multiple end-to-end features such as the "User Profile" module, handling both the API logic and frontend integration ahead of schedule.',
+        'Defined service architecture and Docker containerization standards across the engineering team while leading peer code reviews to enforce TypeScript strictness, modularity, and long-term maintainability.',
+        'Optimized automated CI/CD build and testing pipelines, eliminating manual deployment bottlenecks and ensuring reproducible, zero-regression releases across staging and production environments.',
+        'Managed critical production incidents and engineered fault-tolerant payment workflows and third-party API integrations, implementing idempotency checks, webhook verification, and structured observability to protect transaction integrity.',
       ],
     },
     {

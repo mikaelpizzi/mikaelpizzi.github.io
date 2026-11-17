@@ -4,15 +4,22 @@ interface ExperienceListProps {
   items: Experience[];
 }
 
-// Highlights metrics like "40%", "25%", "over 50", etc. in `#EDEDED`
+// Highlights metrics and key architectural signals in `#EDEDED`
+const HIGHLIGHT_REGEX =
+  /(\*\*.*?\*\*|\d+%\s+reduction|\d+%|over 50 reported bugs|zero-downtime migration|Docker containerization standards|peer code reviews|CI\/CD build and testing pipelines|zero-regression releases|idempotency checks|webhook verification|structured observability)/gi;
+
 function formatHighlightText(text: string) {
-  // Regex matches percentages (e.g. 40%, 25%), or specific metric phrases
-  const parts = text.split(/(40% reduction|40%|25%|over 50 reported bugs|100% routing uptime)/gi);
+  const parts = text.split(HIGHLIGHT_REGEX);
 
   return parts.map((part, index) => {
-    if (
-      part.match(/^(40% reduction|40%|25%|over 50 reported bugs|100% routing uptime)$/i)
-    ) {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      return (
+        <span key={index} className="text-[#EDEDED] font-medium">
+          {part.slice(2, -2)}
+        </span>
+      );
+    }
+    if (part.match(HIGHLIGHT_REGEX)) {
       return (
         <span key={index} className="text-[#EDEDED] font-medium">
           {part}
